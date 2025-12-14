@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  backend:
+    build: ../backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - mongo
+      - redis
+  node_backend:
+    build: ../node_backend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+  frontend:
+    build: ../frontend
+    ports:
+      - "3001:3000"
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: pass
+  mongo:
+    image: mongo
+  redis:
+    image: redis
+  mlflow:
+    image: mlflow/mlflow
+    ports:
+      - "5000:5000"
