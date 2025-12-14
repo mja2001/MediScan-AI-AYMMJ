@@ -1,4 +1,3 @@
-MediScan AI
 MediScan AI is an intelligent healthcare diagnostics platform that leverages cutting-edge deep learning models to analyze medical images and provide rapid, accurate disease detection. Our mission is to democratize healthcare diagnostics and save lives through accessible, accurate, and affordable AI-powered medical image analysis.
 Inspiration
 The spark for MediScan AI came from a deeply personal experience. One of our team members lost a relative to late-stage lung cancer that could have been detected much earlier through routine chest X-rays. Living in a tier-2 city, access to radiologists was limited, and the ones available were overwhelmed with backlogs stretching weeks. This tragedy opened our eyes to a harsh reality: India has only 1 radiologist per 100,000 people, far below the global requirement.
