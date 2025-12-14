@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mediscan-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mediscan
+  template:
+    metadata:
+      labels:
+        app: mediscan
+    spec:
+      containers:
+      - name: backend
+        image: mediscan-backend:latest
+        ports:
+        - containerPort: 8000
+---
+# Similar for other services
